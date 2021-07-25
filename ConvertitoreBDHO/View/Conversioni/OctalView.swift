@@ -16,26 +16,7 @@ struct OctalView: View {
             Text("Converti il tuo valore ottale")
                 .font(.title2)
                 .padding()
-            Button {
-//                mostrare tastiera
-                withAnimation{
-                    self.tastiera.toggle()
-                }
-            } label: {
-                ZStack{
-                    Capsule()
-                        .frame(width: 300, height: 30)
-                        //                        .border(Color.black)
-                        .foregroundColor(.black)
-                    Capsule()
-                        .frame(width: 298, height: 28)
-                        .foregroundColor(.white)
-                    
-                    Text(testo)
-                        .foregroundColor(.black)
-                        .frame(width: 290, height: 30)
-                }
-            }
+            ButtonText(tastiera: $tastiera, testo: $testo)
     //            mostrare la tastera o i risultati
             ZStack{
                 if tastiera == true{

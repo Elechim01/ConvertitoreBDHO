@@ -19,7 +19,7 @@ struct TastieraView: View {
     ]
     var body: some View {
         VStack {
-            LazyVGrid(columns: colunms,spacing:40, content: {
+            LazyVGrid(columns: colunms,spacing:50, content: {
                 ForEach(arrayTastiera, id: \.self){ text in
                     ButtonTastiera(StringText: $testo, grandezza: 50,testo: text)
                 }
@@ -105,7 +105,7 @@ struct ButtonTastiera: View {
                             .foregroundColor(.black)
                         Circle()
                             .frame(width:  grandezza - 2, height: grandezza - 2)
-                            .foregroundColor(.white)
+                            .foregroundColor(.red)
                     })
             })
         }else{
