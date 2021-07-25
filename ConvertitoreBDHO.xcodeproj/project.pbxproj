@@ -32,6 +32,7 @@
 		C437782326ADC542001C4A75 /* BinaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryView.swift; sourceTree = "<group>"; };
 		C437782626ADC808001C4A75 /* OctalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctalView.swift; sourceTree = "<group>"; };
 		C437782826ADCAAE001C4A75 /* HexadecimalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexadecimalView.swift; sourceTree = "<group>"; };
+		C437782A26AE11CF001C4A75 /* ConvertitoreBDHO.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ConvertitoreBDHO.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +65,7 @@
 		C437780B26AD7572001C4A75 /* ConvertitoreBDHO */ = {
 			isa = PBXGroup;
 			children = (
+				C437782A26AE11CF001C4A75 /* ConvertitoreBDHO.entitlements */,
 				C437781E26ADA423001C4A75 /* Model */,
 				C437781D26AD7EDE001C4A75 /* View */,
 				C437780C26AD7572001C4A75 /* ConvertitoreBDHOApp.swift */,
@@ -315,6 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ConvertitoreBDHO/ConvertitoreBDHO.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ConvertitoreBDHO/Preview Content\"";
 				DEVELOPMENT_TEAM = G7DSPSWXXC;
@@ -337,6 +340,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ConvertitoreBDHO/ConvertitoreBDHO.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ConvertitoreBDHO/Preview Content\"";
 				DEVELOPMENT_TEAM = G7DSPSWXXC;

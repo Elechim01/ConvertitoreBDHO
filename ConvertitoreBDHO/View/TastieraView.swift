@@ -17,14 +17,31 @@ struct TastieraView: View {
     let colunms = [
         GridItem(.adaptive(minimum: 50))
     ]
+    let colnumsIpad = [
+        GridItem(.adaptive(minimum: 90))
+    ]
     var body: some View {
-        VStack {
-            LazyVGrid(columns: colunms,spacing:50, content: {
-                ForEach(arrayTastiera, id: \.self){ text in
-                    ButtonTastiera(StringText: $testo, grandezza: 50,testo: text)
-                }
-            })
-            .padding()
+        VStack{
+            if UIDevice.current.userInterfaceIdiom == .pad{
+                
+                LazyVGrid(columns:colnumsIpad,spacing:50, content: {
+                    ForEach(arrayTastiera, id: \.self){ text in
+                        ButtonTastiera(StringText: $testo, grandezza: 50,testo: text)
+                    }
+                })
+                .frame(width : UIScreen.main.bounds.width / 2,alignment: .center)
+                .padding()
+                
+            }else{
+                LazyVGrid(columns:colunms,spacing:50, content: {
+                    ForEach(arrayTastiera, id: \.self){ text in
+                        ButtonTastiera(StringText: $testo, grandezza: 50,testo: text)
+                    }
+                })
+                .padding()
+            }
+                
+            
             HStack{
             Button(action: {
 //                calcolovalori decimali:
