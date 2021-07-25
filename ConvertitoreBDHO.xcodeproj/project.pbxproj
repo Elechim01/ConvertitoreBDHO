@@ -11,6 +11,12 @@
 		C437780F26AD7572001C4A75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C437780E26AD7572001C4A75 /* ContentView.swift */; };
 		C437781126AD7574001C4A75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C437781026AD7574001C4A75 /* Assets.xcassets */; };
 		C437781426AD7574001C4A75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C437781326AD7574001C4A75 /* Preview Assets.xcassets */; };
+		C437781C26AD7B22001C4A75 /* TastieraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C437781B26AD7B22001C4A75 /* TastieraView.swift */; };
+		C437782026ADA444001C4A75 /* GestioneConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C437781F26ADA444001C4A75 /* GestioneConvert.swift */; };
+		C437782226ADABCF001C4A75 /* DecimalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C437782126ADABCF001C4A75 /* DecimalView.swift */; };
+		C437782426ADC542001C4A75 /* BinaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C437782326ADC542001C4A75 /* BinaryView.swift */; };
+		C437782726ADC808001C4A75 /* OctalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C437782626ADC808001C4A75 /* OctalView.swift */; };
+		C437782926ADCAAE001C4A75 /* HexadecimalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C437782826ADCAAE001C4A75 /* HexadecimalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		C437781026AD7574001C4A75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C437781326AD7574001C4A75 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C437781526AD7574001C4A75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C437781B26AD7B22001C4A75 /* TastieraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastieraView.swift; sourceTree = "<group>"; };
+		C437781F26ADA444001C4A75 /* GestioneConvert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestioneConvert.swift; sourceTree = "<group>"; };
+		C437782126ADABCF001C4A75 /* DecimalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalView.swift; sourceTree = "<group>"; };
+		C437782326ADC542001C4A75 /* BinaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryView.swift; sourceTree = "<group>"; };
+		C437782626ADC808001C4A75 /* OctalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctalView.swift; sourceTree = "<group>"; };
+		C437782826ADCAAE001C4A75 /* HexadecimalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexadecimalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +64,9 @@
 		C437780B26AD7572001C4A75 /* ConvertitoreBDHO */ = {
 			isa = PBXGroup;
 			children = (
+				C437781E26ADA423001C4A75 /* Model */,
+				C437781D26AD7EDE001C4A75 /* View */,
 				C437780C26AD7572001C4A75 /* ConvertitoreBDHOApp.swift */,
-				C437780E26AD7572001C4A75 /* ContentView.swift */,
 				C437781026AD7574001C4A75 /* Assets.xcassets */,
 				C437781526AD7574001C4A75 /* Info.plist */,
 				C437781226AD7574001C4A75 /* Preview Content */,
@@ -67,6 +80,35 @@
 				C437781326AD7574001C4A75 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C437781D26AD7EDE001C4A75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C437782526ADC7F3001C4A75 /* Conversioni */,
+				C437780E26AD7572001C4A75 /* ContentView.swift */,
+				C437781B26AD7B22001C4A75 /* TastieraView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C437781E26ADA423001C4A75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C437781F26ADA444001C4A75 /* GestioneConvert.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C437782526ADC7F3001C4A75 /* Conversioni */ = {
+			isa = PBXGroup;
+			children = (
+				C437782126ADABCF001C4A75 /* DecimalView.swift */,
+				C437782326ADC542001C4A75 /* BinaryView.swift */,
+				C437782626ADC808001C4A75 /* OctalView.swift */,
+				C437782826ADCAAE001C4A75 /* HexadecimalView.swift */,
+			);
+			path = Conversioni;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +180,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C437782926ADCAAE001C4A75 /* HexadecimalView.swift in Sources */,
 				C437780F26AD7572001C4A75 /* ContentView.swift in Sources */,
+				C437782426ADC542001C4A75 /* BinaryView.swift in Sources */,
+				C437781C26AD7B22001C4A75 /* TastieraView.swift in Sources */,
 				C437780D26AD7572001C4A75 /* ConvertitoreBDHOApp.swift in Sources */,
+				C437782726ADC808001C4A75 /* OctalView.swift in Sources */,
+				C437782026ADA444001C4A75 /* GestioneConvert.swift in Sources */,
+				C437782226ADABCF001C4A75 /* DecimalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
