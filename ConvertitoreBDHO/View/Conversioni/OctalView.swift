@@ -27,8 +27,10 @@ struct OctalView: View {
                     Spacer()
                     Spacer()
                 }else{
+                    if testo != "" {
                     RisutatiView(valori: gestione.valori)
                         .padding()
+                    }
                 }
             }
         }
